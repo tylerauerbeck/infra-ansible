@@ -1,4 +1,4 @@
----	
+---
 
 - name: Install C++ Community Plugin For SonarQube
   hosts: ocp-sonarqube
