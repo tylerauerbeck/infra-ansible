@@ -22,5 +22,5 @@ ansible_tower_credential_types:
   injectors_extra_vars:
   - name: "MY_EXTRA_VAR1"
     id: "CUSTOM_ID1"
-  - name: "MY_EXTRA_VAR2
+  - name: "MY_EXTRA_VAR2"
     id: "CUSTOM_ID2"
