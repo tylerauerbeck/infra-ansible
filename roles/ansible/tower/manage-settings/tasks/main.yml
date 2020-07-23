@@ -19,7 +19,7 @@
   - name: "Process the inventory credentials"
     include_tasks: process-settings.yml
     with_items:
-      - "{{ ansible_tower.settings }}"
+    - "{{ ansible_tower.settings }}"
 
   when:
-    - ansible_tower.settings is defined
+  - ansible_tower.settings is defined

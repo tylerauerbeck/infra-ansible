@@ -58,7 +58,7 @@
   set_fact:
     list_of_job_template_credentials: "{{ [ job_template.credential|trim ] }}"
   when:
-    - job_template.credential is defined
+  - job_template.credential is defined
 
 - name: "Add credentials to job template: {{ job_template.name }}"
   include_tasks: process-job-template-credentials.yml

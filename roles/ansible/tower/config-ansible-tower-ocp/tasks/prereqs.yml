@@ -8,13 +8,13 @@
 - name: openshift_user should be defined
   assert:
     that:
-      - openshift_user is defined and openshift_user != ''
+    - openshift_user is defined and openshift_user != ''
     msg: "Set the value of 'openshift_user' in the inventory file."
 
 - name: openshift_password should be defined
   assert:
     that:
-      - openshift_password is defined and openshift_password != ''
+    - openshift_password is defined and openshift_password != ''
     msg: "Set the value of 'openshift_password' in the inventory file."
 
 - name: Check if the oc command is installed
@@ -25,5 +25,6 @@
 - name: Ensure OpenShift CLI is installed
   assert:
     that:
-      - oc_result.rc == 0
+    - oc_result.rc == 0
     msg: "Install the OpenShift CLI (oc)"
+
