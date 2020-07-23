@@ -1,3 +1,5 @@
+---	
+
 - name: Install C++ Community Plugin For SonarQube
   hosts: ocp-sonarqube
 
@@ -8,3 +10,4 @@
       install_location: /opt/sonarqube/extensions/plugins
       namespace: deven-role-test
       pod_prefix: sonarqube
+
