@@ -23,4 +23,4 @@
 - name: 'Install mongodb-org'
   package:
     name: mongodb-org
-    state: latest
+    state: installed 
