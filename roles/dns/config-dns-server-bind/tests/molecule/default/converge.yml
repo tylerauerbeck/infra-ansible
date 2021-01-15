@@ -1,0 +1,6 @@
+---
+- name: Converge
+  hosts: rhel-instance 
+  tasks:
+    - debug:
+        msg: "{{ named_config.recursion }}"
