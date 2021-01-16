@@ -1,6 +1,7 @@
 ---
 - name: Converge
-  hosts: rhel-instance 
-  tasks:
-    - debug:
-        msg: "{{ named_config.recursion }}"
+  hosts: rhel-instance
+  gather_facts: false
+  roles:
+    - dns/config-dns-server-bind
+
